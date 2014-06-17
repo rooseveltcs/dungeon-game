@@ -38,7 +38,7 @@ public class Actor
      */
     public Actor()
     {
-        color = Color.BLUE;
+        color = Color.BLACK;
         direction = Location.NORTH;
         grid = null;
         location = null;
@@ -59,7 +59,7 @@ public class Actor
      */
     public void setColor(Color newColor)
     {
-        color = Color.GRAY;
+        color = newColor;
     }
 
     /**
