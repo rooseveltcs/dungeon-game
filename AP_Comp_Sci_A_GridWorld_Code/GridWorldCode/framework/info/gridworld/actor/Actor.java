@@ -59,7 +59,7 @@ public class Actor
      */
     public void setColor(Color newColor)
     {
-        color = Color.GRAY;
+        color = newColor;
     }
 
     /**

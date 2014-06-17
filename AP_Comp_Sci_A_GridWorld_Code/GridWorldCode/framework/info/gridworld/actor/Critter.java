@@ -72,7 +72,7 @@ public class Critter extends Actor
     {
         for (Actor a : actors)
         {
-            if (!(a instanceof Critter) && !(a instanceof Critter))
+            if (!(a instanceof Rock) && !(a instanceof Critter))
                 a.removeSelfFromGrid();
         }
     }
