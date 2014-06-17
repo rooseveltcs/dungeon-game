@@ -15,11 +15,10 @@
  */
 
 package info.gridworld.actor;
-
+import info.gridworld.actor.Actor;
 import info.gridworld.grid.Location;
-
 import java.util.ArrayList;
-
+import java.awt.Color;
 /**
  * A <code>Critter</code> is an actor that moves through its world, processing
  * other actors in some way and then moving to a new location. Define your own
@@ -68,14 +67,16 @@ public class Critter extends Actor
      * location of this critter is unchanged.
      * @param actors the actors to be processed
      */
-    public void processActors(ArrayList<Actor> actors)
-    {
-        for (Actor a : actors)
-        {
-            if (!(a instanceof Critter) && !(a instanceof Critter))
-                a.removeSelfFromGrid();
-        }
-    }
+     public void processActors(ArrayList<Actor> actors)
+     {
+         for (Actor a : actors)
+         {
+             if ( ((a instanceof Critter))){
+                 a.removeSelfFromGrid();
+         }
+     }
+     
+     }
 
     /**
      * Gets a list of possible locations for the next move. These locations must
